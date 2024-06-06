@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>WebSpark</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20240606142653" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__wrapper">
+				<div class="header__container">
+					<button type="button" class="header__icon icon-menu">
+						<span></span>
+						<div class="icon-menu__filter-ibg">
+							<img src="img/icons/filter.svg" alt="filter" />
+						</div>
+					</button>
+					<div class="header__logo-ibg">
+						<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo" /></picture>
+					</div>
+					<div class="header__content">
+						<div class="header__title title">
+							<h1 class="title__text">monblanproject</h1>
+							<div class="title__date">
+								<span>Start on 06-06-2024</span>
+							</div>
+						</div>
+						<div class="header__info info-header">
+							<div class="info-header__item icon-list">
+								<span>870</span>
+								<p>posts</p>
+							</div>
+							<div class="info-header__item">
+								<span>11,787</span>
+								<p>followers</p>
+							</div>
+							<div class="info-header__item">
+								<span>112</span>
+								<p>following</p>
+							</div>
+						</div>
+						<div class="header__filters filters-header">
+							<div class="filters-header__body">
+								<div class="filters-header__content">
+									<p class="filters-header__text">Date</p>
+									<div class="filters-header__pickers filters-header-picker">
+										<div class="filters-header-picker__wrapper">
+											<input autocomplete="off" type="text" placeholder="from" data-datepicker class="input start" id="from" name="start" />
+											<!-- <button
+                    type="button"
+                    class="filters-header-picker__clear clear-start"
+                  >
+                    X
+                  </button> -->
+										</div>
+										<div class="filters-header-picker__wrapper">
+											<input id="to" name="end" autocomplete="off" type="text" placeholder="to" data-datepicker class="input end" />
+											<!-- <button
+                    type="button"
+                    class="filters-header-picker__clear clear-end"
+                  >
+                    X
+                  </button> -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<picture><source srcset="img/design_01.webp" type="image/webp"><img data-prlx-mouse data-prlx-cx="150" data-prlx-cy="150" class="design design_first" src="img/design_01.png" alt="design_01" /></picture>
+			<picture><source srcset="img/design_02.webp" type="image/webp"><img data-prlx-dxr data-prlx-mouse class="design design_second" src="img/design_02.png" alt="design_02" /></picture>
+			<section class="page__items items-page _list">
+				<div class="items-page__container">
+					<div class="items-page__icons">
+						<div class="icon-view icon-view_grid">
+							<?xml version="1.0" ?><svg version="1.1" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<title />
+								<desc />
+								<defs />
+								<g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1">
+									<g id="Core" transform="translate(-340.000000, -4.000000)">
+										<g id="apps" transform="translate(340.000000, 4.000000)">
+											<path d="M0,4 L4,4 L4,0 L0,0 L0,4 L0,4 Z M6,16 L10,16 L10,12 L6,12 L6,16 L6,16 Z M0,16 L4,16 L4,12 L0,12 L0,16 L0,16 Z M0,10 L4,10 L4,6 L0,6 L0,10 L0,10 Z M6,10 L10,10 L10,6 L6,6 L6,10 L6,10 Z M12,0 L12,4 L16,4 L16,0 L12,0 L12,0 Z M6,4 L10,4 L10,0 L6,0 L6,4 L6,4 Z M12,10 L16,10 L16,6 L12,6 L12,10 L12,10 Z M12,16 L16,16 L16,12 L12,12 L12,16 L12,16 Z" id="Shape" />
+										</g>
+									</g>
+								</g>
+							</svg>
+						</div>
+						<div class="icon-view icon-view_list">
+							<?xml version="1.0" ?><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+								<path d="M80 48h-64C7.156 48 0 55.16 0 64v64c0 8.844 7.156 16 16 16h64C88.84 144 96 136.8 96 128V64C96 55.16 88.84 48 80 48zM80 208h-64C7.156 208 0 215.2 0 224v64c0 8.844 7.156 16 16 16h64C88.84 304 96 296.8 96 288V224C96 215.2 88.84 208 80 208zM80 368h-64C7.156 368 0 375.2 0 384v64c0 8.844 7.156 16 16 16h64C88.84 464 96 456.8 96 448v-64C96 375.2 88.84 368 80 368zM192 128h288c17.67 0 32-14.33 32-31.1S497.7 64 480 64H192C174.3 64 160 78.33 160 95.1S174.3 128 192 128zM480 384H192c-17.67 0-32 14.33-32 32s14.33 32 32 32h288c17.67 0 32-14.33 32-32S497.7 384 480 384zM480 224H192C174.3 224 160 238.3 160 256s14.33 32 32 32h288c17.67 0 32-14.33 32-32S497.7 224 480 224z" />
+							</svg>
+						</div>
+					</div>
+					<div class="items-page__items">
+						<article class="item">
+							<div class="item__body">
+
+
+								<div class="item__image-ibg">
+									<picture><source srcset="img/items/10.webp" type="image/webp"><img src="img/items/10.jpeg" alt="10"></picture>
+								</div>
+								<div class="item__cols">
+									<div class="item__span">
+										<div class="item__col item__col_today">
+											<span>
+												Today
+											</span>
+											<div class="item__actions actions-items">
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg id="Layer_1_1_" style="enable-background:new 0 0 16 16;" version="1.1" viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+														<path d="M8.612,2.347L8,2.997l-0.612-0.65c-1.69-1.795-4.43-1.795-6.12,0c-1.69,1.795-1.69,4.706,0,6.502l0.612,0.65L8,16  l6.12-6.502l0.612-0.65c1.69-1.795,1.69-4.706,0-6.502C13.042,0.551,10.302,0.551,8.612,2.347z" />
+													</svg>
+													<p class="actions-items__quantity">
+														128
+													</p>
+												</div>
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+														<path d="M43.98 8c0-2.21-1.77-4-3.98-4h-32c-2.21 0-4 1.79-4 4v24c0 2.21 1.79 4 4 4h28l8 8-.02-36z" />
+														<path d="M0 0h48v48h-48z" fill="none" />
+													</svg>
+													<p class="actions-items__quantity">
+														31
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="item__col item__col_date">
+											<span id="current-date">
+												9-08-2016
+											</span>
+											<div class="item__actions actions-items">
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg id="Layer_1_1_" style="enable-background:new 0 0 16 16;" version="1.1" viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+														<path d="M8.612,2.347L8,2.997l-0.612-0.65c-1.69-1.795-4.43-1.795-6.12,0c-1.69,1.795-1.69,4.706,0,6.502l0.612,0.65L8,16  l6.12-6.502l0.612-0.65c1.69-1.795,1.69-4.706,0-6.502C13.042,0.551,10.302,0.551,8.612,2.347z" />
+													</svg>
+													<p class="actions-items__quantity">
+														67
+													</p>
+												</div>
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+														<path d="M43.98 8c0-2.21-1.77-4-3.98-4h-32c-2.21 0-4 1.79-4 4v24c0 2.21 1.79 4 4 4h28l8 8-.02-36z" />
+														<path d="M0 0h48v48h-48z" fill="none" />
+													</svg>
+													<p class="actions-items__quantity">
+														22
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item__col item__col_upload">
+										<span>
+											Image upload
+										</span>
+										<div class="item__actions actions-items">
+											<div class="actions-items__item">
+												<p class="actions-items__quantity" id="upload-date">
+													11-04-2016
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="item">
+							<div class="item__body">
+
+
+								<div class="item__image-ibg">
+									<picture><source srcset="img/items/11.webp" type="image/webp"><img src="img/items/11.jpeg" alt="11"></picture>
+								</div>
+								<div class="item__cols">
+									<div class="item__span">
+										<div class="item__col item__col_today">
+											<span>
+												Today
+											</span>
+											<div class="item__actions actions-items">
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg id="Layer_1_1_" style="enable-background:new 0 0 16 16;" version="1.1" viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+														<path d="M8.612,2.347L8,2.997l-0.612-0.65c-1.69-1.795-4.43-1.795-6.12,0c-1.69,1.795-1.69,4.706,0,6.502l0.612,0.65L8,16  l6.12-6.502l0.612-0.65c1.69-1.795,1.69-4.706,0-6.502C13.042,0.551,10.302,0.551,8.612,2.347z" />
+													</svg>
+													<p class="actions-items__quantity">
+														128
+													</p>
+												</div>
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+														<path d="M43.98 8c0-2.21-1.77-4-3.98-4h-32c-2.21 0-4 1.79-4 4v24c0 2.21 1.79 4 4 4h28l8 8-.02-36z" />
+														<path d="M0 0h48v48h-48z" fill="none" />
+													</svg>
+													<p class="actions-items__quantity">
+														31
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="item__col item__col_date">
+											<span id="current-date">
+												9-08-2016
+											</span>
+											<div class="item__actions actions-items">
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg id="Layer_1_1_" style="enable-background:new 0 0 16 16;" version="1.1" viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+														<path d="M8.612,2.347L8,2.997l-0.612-0.65c-1.69-1.795-4.43-1.795-6.12,0c-1.69,1.795-1.69,4.706,0,6.502l0.612,0.65L8,16  l6.12-6.502l0.612-0.65c1.69-1.795,1.69-4.706,0-6.502C13.042,0.551,10.302,0.551,8.612,2.347z" />
+													</svg>
+													<p class="actions-items__quantity">
+														67
+													</p>
+												</div>
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+														<path d="M43.98 8c0-2.21-1.77-4-3.98-4h-32c-2.21 0-4 1.79-4 4v24c0 2.21 1.79 4 4 4h28l8 8-.02-36z" />
+														<path d="M0 0h48v48h-48z" fill="none" />
+													</svg>
+													<p class="actions-items__quantity">
+														22
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item__col item__col_upload">
+										<span>
+											Image upload
+										</span>
+										<div class="item__actions actions-items">
+											<div class="actions-items__item">
+												<p class="actions-items__quantity" id="upload-date">
+													11-04-2016
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="item">
+							<div class="item__body">
+
+
+								<div class="item__image-ibg">
+									<picture><source srcset="img/items/08.webp" type="image/webp"><img src="img/items/08.jpeg" alt="08"></picture>
+								</div>
+								<div class="item__cols">
+									<div class="item__span">
+										<div class="item__col item__col_today">
+											<span>
+												Today
+											</span>
+											<div class="item__actions actions-items">
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg id="Layer_1_1_" style="enable-background:new 0 0 16 16;" version="1.1" viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+														<path d="M8.612,2.347L8,2.997l-0.612-0.65c-1.69-1.795-4.43-1.795-6.12,0c-1.69,1.795-1.69,4.706,0,6.502l0.612,0.65L8,16  l6.12-6.502l0.612-0.65c1.69-1.795,1.69-4.706,0-6.502C13.042,0.551,10.302,0.551,8.612,2.347z" />
+													</svg>
+													<p class="actions-items__quantity">
+														128
+													</p>
+												</div>
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+														<path d="M43.98 8c0-2.21-1.77-4-3.98-4h-32c-2.21 0-4 1.79-4 4v24c0 2.21 1.79 4 4 4h28l8 8-.02-36z" />
+														<path d="M0 0h48v48h-48z" fill="none" />
+													</svg>
+													<p class="actions-items__quantity">
+														31
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="item__col item__col_date">
+											<span id="current-date">
+												9-08-2016
+											</span>
+											<div class="item__actions actions-items">
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg id="Layer_1_1_" style="enable-background:new 0 0 16 16;" version="1.1" viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+														<path d="M8.612,2.347L8,2.997l-0.612-0.65c-1.69-1.795-4.43-1.795-6.12,0c-1.69,1.795-1.69,4.706,0,6.502l0.612,0.65L8,16  l6.12-6.502l0.612-0.65c1.69-1.795,1.69-4.706,0-6.502C13.042,0.551,10.302,0.551,8.612,2.347z" />
+													</svg>
+													<p class="actions-items__quantity">
+														67
+													</p>
+												</div>
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+														<path d="M43.98 8c0-2.21-1.77-4-3.98-4h-32c-2.21 0-4 1.79-4 4v24c0 2.21 1.79 4 4 4h28l8 8-.02-36z" />
+														<path d="M0 0h48v48h-48z" fill="none" />
+													</svg>
+													<p class="actions-items__quantity">
+														22
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item__col item__col_upload">
+										<span>
+											Image upload
+										</span>
+										<div class="item__actions actions-items">
+											<div class="actions-items__item">
+												<p class="actions-items__quantity" id="upload-date">
+													11-04-2016
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="item">
+							<div class="item__body">
+
+
+								<div class="item__image-ibg">
+									<picture><source srcset="img/items/12.webp" type="image/webp"><img src="img/items/12.jpeg" alt="12"></picture>
+								</div>
+								<div class="item__cols">
+									<div class="item__span">
+										<div class="item__col item__col_today">
+											<span>
+												Today
+											</span>
+											<div class="item__actions actions-items">
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg id="Layer_1_1_" style="enable-background:new 0 0 16 16;" version="1.1" viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+														<path d="M8.612,2.347L8,2.997l-0.612-0.65c-1.69-1.795-4.43-1.795-6.12,0c-1.69,1.795-1.69,4.706,0,6.502l0.612,0.65L8,16  l6.12-6.502l0.612-0.65c1.69-1.795,1.69-4.706,0-6.502C13.042,0.551,10.302,0.551,8.612,2.347z" />
+													</svg>
+													<p class="actions-items__quantity">
+														128
+													</p>
+												</div>
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+														<path d="M43.98 8c0-2.21-1.77-4-3.98-4h-32c-2.21 0-4 1.79-4 4v24c0 2.21 1.79 4 4 4h28l8 8-.02-36z" />
+														<path d="M0 0h48v48h-48z" fill="none" />
+													</svg>
+													<p class="actions-items__quantity">
+														31
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="item__col item__col_date">
+											<span id="current-date">
+												9-08-2016
+											</span>
+											<div class="item__actions actions-items">
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg id="Layer_1_1_" style="enable-background:new 0 0 16 16;" version="1.1" viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+														<path d="M8.612,2.347L8,2.997l-0.612-0.65c-1.69-1.795-4.43-1.795-6.12,0c-1.69,1.795-1.69,4.706,0,6.502l0.612,0.65L8,16  l6.12-6.502l0.612-0.65c1.69-1.795,1.69-4.706,0-6.502C13.042,0.551,10.302,0.551,8.612,2.347z" />
+													</svg>
+													<p class="actions-items__quantity">
+														67
+													</p>
+												</div>
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+														<path d="M43.98 8c0-2.21-1.77-4-3.98-4h-32c-2.21 0-4 1.79-4 4v24c0 2.21 1.79 4 4 4h28l8 8-.02-36z" />
+														<path d="M0 0h48v48h-48z" fill="none" />
+													</svg>
+													<p class="actions-items__quantity">
+														22
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item__col item__col_upload">
+										<span>
+											Image upload
+										</span>
+										<div class="item__actions actions-items">
+											<div class="actions-items__item">
+												<p class="actions-items__quantity" id="upload-date">
+													11-04-2016
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="item">
+							<div class="item__body">
+
+
+								<div class="item__image-ibg">
+									<picture><source srcset="img/items/13.webp" type="image/webp"><img src="img/items/13.jpeg" alt="13"></picture>
+								</div>
+								<div class="item__cols">
+									<div class="item__span">
+										<div class="item__col item__col_today">
+											<span>
+												Today
+											</span>
+											<div class="item__actions actions-items">
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg id="Layer_1_1_" style="enable-background:new 0 0 16 16;" version="1.1" viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+														<path d="M8.612,2.347L8,2.997l-0.612-0.65c-1.69-1.795-4.43-1.795-6.12,0c-1.69,1.795-1.69,4.706,0,6.502l0.612,0.65L8,16  l6.12-6.502l0.612-0.65c1.69-1.795,1.69-4.706,0-6.502C13.042,0.551,10.302,0.551,8.612,2.347z" />
+													</svg>
+													<p class="actions-items__quantity">
+														128
+													</p>
+												</div>
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+														<path d="M43.98 8c0-2.21-1.77-4-3.98-4h-32c-2.21 0-4 1.79-4 4v24c0 2.21 1.79 4 4 4h28l8 8-.02-36z" />
+														<path d="M0 0h48v48h-48z" fill="none" />
+													</svg>
+													<p class="actions-items__quantity">
+														31
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="item__col item__col_date">
+											<span id="current-date">
+												9-08-2016
+											</span>
+											<div class="item__actions actions-items">
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg id="Layer_1_1_" style="enable-background:new 0 0 16 16;" version="1.1" viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+														<path d="M8.612,2.347L8,2.997l-0.612-0.65c-1.69-1.795-4.43-1.795-6.12,0c-1.69,1.795-1.69,4.706,0,6.502l0.612,0.65L8,16  l6.12-6.502l0.612-0.65c1.69-1.795,1.69-4.706,0-6.502C13.042,0.551,10.302,0.551,8.612,2.347z" />
+													</svg>
+													<p class="actions-items__quantity">
+														67
+													</p>
+												</div>
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+														<path d="M43.98 8c0-2.21-1.77-4-3.98-4h-32c-2.21 0-4 1.79-4 4v24c0 2.21 1.79 4 4 4h28l8 8-.02-36z" />
+														<path d="M0 0h48v48h-48z" fill="none" />
+													</svg>
+													<p class="actions-items__quantity">
+														22
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item__col item__col_upload">
+										<span>
+											Image upload
+										</span>
+										<div class="item__actions actions-items">
+											<div class="actions-items__item">
+												<p class="actions-items__quantity" id="upload-date">
+													11-04-2016
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="item">
+							<div class="item__body">
+
+
+								<div class="item__image-ibg">
+									<picture><source srcset="img/items/14.webp" type="image/webp"><img src="img/items/14.jpeg" alt="14"></picture>
+								</div>
+								<div class="item__cols">
+									<div class="item__span">
+										<div class="item__col item__col_today">
+											<span>
+												Today
+											</span>
+											<div class="item__actions actions-items">
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg id="Layer_1_1_" style="enable-background:new 0 0 16 16;" version="1.1" viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+														<path d="M8.612,2.347L8,2.997l-0.612-0.65c-1.69-1.795-4.43-1.795-6.12,0c-1.69,1.795-1.69,4.706,0,6.502l0.612,0.65L8,16  l6.12-6.502l0.612-0.65c1.69-1.795,1.69-4.706,0-6.502C13.042,0.551,10.302,0.551,8.612,2.347z" />
+													</svg>
+													<p class="actions-items__quantity">
+														128
+													</p>
+												</div>
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+														<path d="M43.98 8c0-2.21-1.77-4-3.98-4h-32c-2.21 0-4 1.79-4 4v24c0 2.21 1.79 4 4 4h28l8 8-.02-36z" />
+														<path d="M0 0h48v48h-48z" fill="none" />
+													</svg>
+													<p class="actions-items__quantity">
+														31
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="item__col item__col_date">
+											<span id="current-date">
+												9-08-2016
+											</span>
+											<div class="item__actions actions-items">
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg id="Layer_1_1_" style="enable-background:new 0 0 16 16;" version="1.1" viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+														<path d="M8.612,2.347L8,2.997l-0.612-0.65c-1.69-1.795-4.43-1.795-6.12,0c-1.69,1.795-1.69,4.706,0,6.502l0.612,0.65L8,16  l6.12-6.502l0.612-0.65c1.69-1.795,1.69-4.706,0-6.502C13.042,0.551,10.302,0.551,8.612,2.347z" />
+													</svg>
+													<p class="actions-items__quantity">
+														67
+													</p>
+												</div>
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+														<path d="M43.98 8c0-2.21-1.77-4-3.98-4h-32c-2.21 0-4 1.79-4 4v24c0 2.21 1.79 4 4 4h28l8 8-.02-36z" />
+														<path d="M0 0h48v48h-48z" fill="none" />
+													</svg>
+													<p class="actions-items__quantity">
+														22
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item__col item__col_upload">
+										<span>
+											Image upload
+										</span>
+										<div class="item__actions actions-items">
+											<div class="actions-items__item">
+												<p class="actions-items__quantity" id="upload-date">
+													11-04-2016
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="item">
+							<div class="item__body">
+
+
+								<div class="item__image-ibg">
+									<picture><source srcset="img/items/15.webp" type="image/webp"><img src="img/items/15.jpeg" alt="15"></picture>
+								</div>
+								<div class="item__cols">
+									<div class="item__span">
+										<div class="item__col item__col_today">
+											<span>
+												Today
+											</span>
+											<div class="item__actions actions-items">
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg id="Layer_1_1_" style="enable-background:new 0 0 16 16;" version="1.1" viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+														<path d="M8.612,2.347L8,2.997l-0.612-0.65c-1.69-1.795-4.43-1.795-6.12,0c-1.69,1.795-1.69,4.706,0,6.502l0.612,0.65L8,16  l6.12-6.502l0.612-0.65c1.69-1.795,1.69-4.706,0-6.502C13.042,0.551,10.302,0.551,8.612,2.347z" />
+													</svg>
+													<p class="actions-items__quantity">
+														128
+													</p>
+												</div>
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+														<path d="M43.98 8c0-2.21-1.77-4-3.98-4h-32c-2.21 0-4 1.79-4 4v24c0 2.21 1.79 4 4 4h28l8 8-.02-36z" />
+														<path d="M0 0h48v48h-48z" fill="none" />
+													</svg>
+													<p class="actions-items__quantity">
+														31
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="item__col item__col_date">
+											<span id="current-date">
+												9-08-2016
+											</span>
+											<div class="item__actions actions-items">
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg id="Layer_1_1_" style="enable-background:new 0 0 16 16;" version="1.1" viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+														<path d="M8.612,2.347L8,2.997l-0.612-0.65c-1.69-1.795-4.43-1.795-6.12,0c-1.69,1.795-1.69,4.706,0,6.502l0.612,0.65L8,16  l6.12-6.502l0.612-0.65c1.69-1.795,1.69-4.706,0-6.502C13.042,0.551,10.302,0.551,8.612,2.347z" />
+													</svg>
+													<p class="actions-items__quantity">
+														67
+													</p>
+												</div>
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+														<path d="M43.98 8c0-2.21-1.77-4-3.98-4h-32c-2.21 0-4 1.79-4 4v24c0 2.21 1.79 4 4 4h28l8 8-.02-36z" />
+														<path d="M0 0h48v48h-48z" fill="none" />
+													</svg>
+													<p class="actions-items__quantity">
+														22
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item__col item__col_upload">
+										<span>
+											Image upload
+										</span>
+										<div class="item__actions actions-items">
+											<div class="actions-items__item">
+												<p class="actions-items__quantity" id="upload-date">
+													11-04-2016
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="item">
+							<div class="item__body">
+
+
+								<div class="item__image-ibg">
+									<picture><source srcset="img/items/08.webp" type="image/webp"><img src="img/items/08.jpeg" alt="08"></picture>
+								</div>
+								<div class="item__cols">
+									<div class="item__span">
+										<div class="item__col item__col_today">
+											<span>
+												Today
+											</span>
+											<div class="item__actions actions-items">
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg id="Layer_1_1_" style="enable-background:new 0 0 16 16;" version="1.1" viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+														<path d="M8.612,2.347L8,2.997l-0.612-0.65c-1.69-1.795-4.43-1.795-6.12,0c-1.69,1.795-1.69,4.706,0,6.502l0.612,0.65L8,16  l6.12-6.502l0.612-0.65c1.69-1.795,1.69-4.706,0-6.502C13.042,0.551,10.302,0.551,8.612,2.347z" />
+													</svg>
+													<p class="actions-items__quantity">
+														128
+													</p>
+												</div>
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+														<path d="M43.98 8c0-2.21-1.77-4-3.98-4h-32c-2.21 0-4 1.79-4 4v24c0 2.21 1.79 4 4 4h28l8 8-.02-36z" />
+														<path d="M0 0h48v48h-48z" fill="none" />
+													</svg>
+													<p class="actions-items__quantity">
+														31
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="item__col item__col_date">
+											<span id="current-date">
+												9-08-2016
+											</span>
+											<div class="item__actions actions-items">
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg id="Layer_1_1_" style="enable-background:new 0 0 16 16;" version="1.1" viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+														<path d="M8.612,2.347L8,2.997l-0.612-0.65c-1.69-1.795-4.43-1.795-6.12,0c-1.69,1.795-1.69,4.706,0,6.502l0.612,0.65L8,16  l6.12-6.502l0.612-0.65c1.69-1.795,1.69-4.706,0-6.502C13.042,0.551,10.302,0.551,8.612,2.347z" />
+													</svg>
+													<p class="actions-items__quantity">
+														67
+													</p>
+												</div>
+												<div class="actions-items__item">
+													<?xml version="1.0" ?><svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+														<path d="M43.98 8c0-2.21-1.77-4-3.98-4h-32c-2.21 0-4 1.79-4 4v24c0 2.21 1.79 4 4 4h28l8 8-.02-36z" />
+														<path d="M0 0h48v48h-48z" fill="none" />
+													</svg>
+													<p class="actions-items__quantity">
+														22
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item__col item__col_upload">
+										<span>
+											Image upload
+										</span>
+										<div class="item__actions actions-items">
+											<div class="actions-items__item">
+												<p class="actions-items__quantity" id="upload-date">
+													11-04-2016
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</article>
+
+					</div>
+					<div class="items-page__button">
+						<button type="button" class="button">
+							Load more
+						</button>
+					</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20240606142653"></script>
+
+</body>
+
+</html>
